@@ -1,0 +1,285 @@
+
+/*
+ * style.css - Estilos do Sistema Toy Mania
+ * Paleta: amarelo, azul-turquesa e vermelho-alaranjado
+ */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F9FA;
+    color: #2D2D2D;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Container mais largo */
+.container-largo {
+    max-width: 900px;
+}
+
+/* Títulos */
+h1 {
+    color: #FFC107;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* Subtítulo */
+.subtitulo {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2D2D2D;
+}
+
+/* Campos de formulário */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="decimal"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s;
+}
+
+/* Efeito ao clicar no campo */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #00BCD4;
+}
+
+/* Botão principal */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF5722;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito hover */
+.btn:hover {
+    background-color: #E64A19;
+    transform: translateY(-2px);
+}
+
+/* Botão de sucesso */
+.btn-sucesso {
+    background-color: #00BCD4;
+}
+
+.btn-sucesso:hover {
+    background-color: #0097A7;
+}
+
+/* Botão de perigo */
+.btn-perigo {
+    background-color: #E64A19;
+}
+
+.btn-perigo:hover {
+    background-color: #BF360C;
+}
+
+/* Botão secundário */
+.btn-secundario {
+    background-color: #FFFFFF;
+    color: #0097A7;
+    border: 2px solid #00BCD4;
+}
+
+.btn-secundario:hover {
+    background-color: #E0F7FA;
+}
+
+/* Botão de voltar */
+.btn-voltar {
+    margin-top: 20px;
+    background-color: #757575;
+}
+
+.btn-voltar:hover {
+    background-color: #555555;
+}
+
+/* Botão em largura total */
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+    background-color: #E0F7FA;
+    color: #006064;
+    border: 1px solid #80DEEA;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Mensagem de erro */
+.mensagem-erro {
+    background-color: #FBE9E7;
+    color: #BF360C;
+    border: 1px solid #FFAB91;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Área de navegação */
+.nav-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #0097A7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cards do painel principal */
+.painel-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Cada card do painel */
+.card-link {
+    display: block;
+    padding: 20px;
+    background-color: #FFF8E1;
+    border: 2px solid #FFC107;
+    border-radius: 10px;
+    color: #2D2D2D;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-link:hover {
+    background-color: #FFC107;
+    color: #2D2D2D;
+    transform: translateY(-3px);
+}
+
+/* Card de sair */
+.card-sair {
+    border-color: #FF5722;
+    color: #E64A19;
+    background-color: #FBE9E7;
+}
+
+.card-sair:hover {
+    background-color: #FF5722;
+    color: #FFFFFF;
+}
+
+/* Tabela */
+.tabela-brinquedo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.tabela-brinquedo th {
+    background-color: #00BCD4;
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-brinquedo td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Linhas alternadas */
+.tabela-brinquedo tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+/* Links de ação */
+.acoes a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.acoes .link-editar {
+    color: #0097A7;
+}
+
+.acoes .link-excluir {
+    color: #E64A19;
+}
+
+.acoes a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.dica-navegacao {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #FFF8E1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    border-left: 4px solid #FFC107;
+}
