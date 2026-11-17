@@ -136,14 +136,16 @@ select:focus {
     background-color: #E0F7FA;
 }
 
-/* Botão de voltar */
+/* Botões de voltar */
 .btn-voltar {
     margin-top: 20px;
-    background-color: #757575;
+    background-color: #FFC107;
+    color: #FFFFFF;
 }
 
 .btn-voltar:hover {
-    background-color: #555555;
+    background-color: #E0A800;
+    color: #FFFFFF;
 }
 
 /* Botão em largura total */
@@ -282,4 +284,34 @@ select:focus {
     font-size: 0.9rem;
     color: #555;
     border-left: 4px solid #FFC107;
+}
+
+/* Botões de navegação */
+.botoes-navegacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botoes-navegacao .btn {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    width: auto;
+}
+
+/* Botão voltar na navegação */
+.botoes-navegacao .btn-voltar {
+    margin-top: 0;
+}
+
+/* Botão cadastro de funcionário */
+.btn-funcionario {
+    background-color: #FFC107;
+    color: #FFFFFF;
+}
+
+.btn-funcionario:hover {
+    background-color: #E0A800;
+    color: #FFFFFF;
 }
